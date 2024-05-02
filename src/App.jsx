@@ -1,4 +1,4 @@
-import {Hero, Navbar, Testinomial, Footer, Projects, Contact } from './components'
+import {Hero, Navbar, Testinomial, Footer, Projects, Contact, Overview } from './components'
 
 function App() {
 
@@ -9,11 +9,13 @@ function App() {
         <Hero />
       </div>
       <div className="w-full mx-auto">
-        {/* <h1 className='font-extrabold text-6xl text-center'>Dinesh Portfolio</h1> */}
+        <Overview />
         <Projects />
         <Testinomial />
         <Contact />
         <Footer />
+        Crafting immersive 3D experiences and interactive interfaces for captivating web journeys.
+        Dive into immersive 3D experiences and captivating interfaces with Dinesh, your go-to frontend wizard
       </div>
     </div>
   )
