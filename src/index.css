@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.violet-gradient {
+    background: #4D27F2;
+    background: linear-gradient(-90deg, #4D27F2 0%, #DF0FDF 100%);
+    background: -webkit-linear-gradient(
+      -90deg,
+      #4D27F2 0%,
+      #df0fdf00 100%
+    );
+  }
+  
