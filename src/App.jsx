@@ -8,14 +8,12 @@ function App() {
         <Navbar />
         <Hero />
       </div>
-      <div className="w-full mx-auto">
+      <div className="w-full px-2 max-w-6xl mx-auto">
         <Overview />
         <Projects />
         <Testinomial />
         <Contact />
         <Footer />
-        Crafting immersive 3D experiences and interactive interfaces for captivating web journeys.
-        Dive into immersive 3D experiences and captivating interfaces with Dinesh, your go-to frontend wizard
       </div>
     </div>
   )

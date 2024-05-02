@@ -1,3 +1,3 @@
 import Dlogo from './Dlogo.png';
-
-export { Dlogo }
+import profile from './GpK8xfmh_5.jpg'
+export { Dlogo, profile }
