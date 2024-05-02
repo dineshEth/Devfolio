@@ -1,4 +1,5 @@
 import React from 'react'
+import { DesktopCanvas } from '../canvas';
 
 function Hero() {
   return (
@@ -15,13 +16,13 @@ function Hero() {
           <h1 className={` font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white`}>
             Hi, I'm <span className='text-title'>Dinesh</span>
           </h1>
-          <p className="text-subtitle sm:py-4 py-2 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]"
->
+          <p className="text-subtitle sm:py-4 py-2 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]">
             I develop 3D visuals, user <br className='sm:block hidden' />
             interfaces and web applications
           </p>
         </div>
     </div>
+    <DesktopCanvas />
     </section>
   )
 }
