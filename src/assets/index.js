@@ -1,5 +1,5 @@
 import Dlogo from './Dlogo.png';
-import profile from './GpK8xfmh_5.jpg'
+import profile from './profile.jpg'
 import blockchain from './blockchain.png'
 import web1 from './web1.png'
 import ui from './Ui.png'
