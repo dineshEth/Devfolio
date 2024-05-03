@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.body::-webkit-scrollbar{
+  display: none;
+}
+
 .violet-gradient {
     background: #4D27F2;
     background: linear-gradient(-90deg, #4D27F2 0%, #DF0FDF 100%);

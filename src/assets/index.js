@@ -31,6 +31,11 @@ import resume from './Dinesh-Resume.pdf'
 
 import link from './link.svg'
 
+import instagram from './instagram.png';
+import linkedn from './linkedin.png';
+import youtube from './youtube.png';
+import twitter from './twitter.png'
+
 
 export { 
     three,
@@ -60,5 +65,9 @@ export {
     mongodb,
     redux,
     resume,
-    link
+    link,
+    youtube,
+    linkedn,
+    instagram,
+    twitter
 }

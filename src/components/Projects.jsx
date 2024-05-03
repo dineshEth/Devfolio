@@ -80,7 +80,7 @@ const ProjectsList = [
       ],
     image: portfolio,
     source_code_link: "https://github.com/dineshEth/Devfolio",
-    project_link: '/'
+    project_link: 'https://dineshprajapati.netlify.app/'
   },
   {
     name: "Text Translator",
