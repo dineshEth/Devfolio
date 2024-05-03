@@ -39,10 +39,10 @@ function FeedbackCard ({
 
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
-          <p className='text-white font-medium text-[16px]'>
-            <span className='blue-text-gradient'>@</span> {name}
+          <p className='text-white bg-clip-text text-transparent bg-gradient-to-r from-[#22b6f1] to-[#e11c98] font-medium text-[16px]'>
+            <span className=''>@</span> {name}
           </p>
-          <p className='mt-1 text-secondary text-[12px]'>
+          <p className='mt-1 text-subtitle text-[12px]'>
             {designation} of {company}
           </p>
         </div>
