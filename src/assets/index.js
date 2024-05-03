@@ -25,9 +25,15 @@ import mongodb from './mongodb.png'
 import git from './git.png';
 import tailwind from './tailwind.png'
 import ts from './ts.png';
+import three from './three.png'
+
+import resume from './Dinesh-Resume.pdf'
+
+import link from './link.svg'
 
 
 export { 
+    three,
     Dlogo, 
     profile,
     blockchain,
@@ -52,5 +58,7 @@ export {
     tailwind,
     git, 
     mongodb,
-    redux
+    redux,
+    resume,
+    link
 }

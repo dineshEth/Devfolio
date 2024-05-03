@@ -31,7 +31,7 @@ function Navbar() {
             <p className='text-xl font-semibold text-nowrap'>Software Enginner</p>
           </div>
         </div>
-        <button className='bg-green-500 text-black p-1 px-2 rounded-md'>Github</button>
+        <button onClick={()=>(window.open('https://github.com/dineshEth',"_blanc"))}  className='bg-green-500 text-black p-1 px-2 rounded-md'>Github</button>
       </div>
     </nav>
   )

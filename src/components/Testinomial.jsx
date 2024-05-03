@@ -4,23 +4,23 @@ import React from 'react'
 const testimonials = [
   {
     name:'Prakash kumar',
-    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+    testimonial: "Dinesh's work is top-notch. His 3D creations are mesmerizing, and his UI designs are sleek and user-friendly.",
     designation : 'Engineer',
     company:'IBM',
     image : ''
   },
   {
-    name:'Dr. Khaleel Khan',
-    testimonial: `After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!`,
-    designation : 'Proffessor',
-    company:'PhysicsWallah',
+    name:'Ayush',
+    testimonial: `Impressed with Dinesh's frontend skills! His 3D work is exceptional, and his UIs are user-friendly`,
+    designation : 'Client',
+    company:'Freelance',
     image : ''
   },
   {
-    name:'Isha Dora',
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    designation : 'Founder',
-    company:'BOMS',
+    name:'Sumuel wilson',
+    testimonial: " Dinesh's UIs are seamless and enhance user experiences. Highly recommended",
+    designation : 'Client',
+    company:'Freelance',
     image : ''
   }
 ]
@@ -30,7 +30,7 @@ function FeedbackCard ({
 }) {
   return (
     <div
-    className='bg-[#14044f] mx-auto z-30 p-10 rounded-3xl sm:w-[320px] w-full'
+    className='bg-[#14044f] mx-auto z-20 p-10 rounded-3xl sm:w-[320px] w-full'
   >
     <p className='text-white font-black text-[48px]'>"</p>
 

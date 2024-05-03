@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Contact from "./Contact";
 import Testinomial from "./Testinomial";
 import Overview from "./Overview";
+import Skills from "./Skills";
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Footer,
     Contact,
     Testinomial,
-    Overview
+    Overview,
+    Skills
 }

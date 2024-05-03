@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tilt } from 'react-tilt'
-import { portfolio, summz, currencyswapper, transit, github } from '../assets'
+import { portfolio, summz, currencyswapper, transit, github, link } from '../assets'
 
 
 const ProjectsList = [
@@ -27,8 +27,8 @@ const ProjectsList = [
       },
     ],
     image: summz,
-    source_code_link: "https://github.com/",
-    project_link: 'https://github.com/'
+    source_code_link: "https://github.com/dineshEth/Summz",
+    project_link: 'https://aiarticlesummary.netlify.app/'
   },
   {
     name: "Currency Swapper",
@@ -53,8 +53,8 @@ const ProjectsList = [
         },
       ],
     image: currencyswapper,
-    source_code_link: "https://github.com/",
-    project_link: 'https://github.com/'
+    source_code_link: "https://github.com/dineshEth/Currency-swapper",
+    project_link: 'https://dinesheth.github.io/Currency-swapper'
   },
   {
     name: "3D Portfolio",
@@ -79,8 +79,8 @@ const ProjectsList = [
         },
       ],
     image: portfolio,
-    source_code_link: "https://github.com/",
-    project_link: 'https://github.com/'
+    source_code_link: "https://github.com/dineshEth/Devfolio",
+    project_link: '/'
   },
   {
     name: "Text Translator",
@@ -105,10 +105,12 @@ const ProjectsList = [
         },
       ],
     image: transit,
-    source_code_link: "https://github.com/",
-    project_link: 'https://github.com/'
+    source_code_link: "https://github.com/dineshEth/TransIt",
+    project_link: 'https://trans-it.vercel.app'
   },
 ]
+
+
 
 const ProjectCard = ({
   index,
@@ -133,6 +135,20 @@ const ProjectCard = ({
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
+
+          
+          <div className='absolute inset-0 flex justify-start m-3 '>
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className='blue-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={link}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+            </div>
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
@@ -173,7 +189,7 @@ function Projects() {
       <div className='flex my-5 flex-col'>
         <p className={" text-subtitle sm:text-[18px] text-[14px]  uppercase"}>What others say</p>
         <h2 className={"  text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"}>Projects.</h2>
-        <p className='text-subtitle sm:text-[18px] text-[14px] max-w-3xl'>Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
+        <p className='text-subtitle sm:text-[18px] text-[14px] max-w-3xl'>These showcased projects offer tangible demonstrations of my skills and expertise. Each project is succinctly described and includes links to code repositories and live demos, showcasing my problem-solving abilities, versatility with technologies, and adept project management.</p>
       </div>
       <div className='flex flex-row flex-wrap justify-start w-full mx-auto items-start gap-4'>
         {ProjectsList.map((project)=>(

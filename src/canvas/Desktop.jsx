@@ -7,13 +7,18 @@ function Model() {
   const computer = useGLTF("./desktop/scene.gltf");
   const [mobileview, setMobileview ] = useState(false);
   useEffect(()=>{
-    if(window.innerWidth < 500){
-      setMobileview(true);
-    }
-    else{
-      setMobileview(false)
-    }
-  },[mobileview])
+    const device = window.matchMedia("(max-width: 600px)");
+    setMobileview(device.matches);
+
+    const handleDevice = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    device.addEventListener("change", handleDevice);
+    return () => {
+      device.removeEventListener("change", handleDevice);
+    };
+  },[]);
   return (
     <mesh className="border-2 border-red-400">
       <hemisphereLight intensity={1} groundColor={"black"} />
