@@ -1,5 +1,55 @@
 import React from 'react'
 import { profile } from '../assets'
+import { Tilt } from 'react-tilt'
+import { web1, blockchain, xvr, ui } from '../assets'
+
+
+const services = [
+  {
+    title: 'Web Devlopment',
+    icon : web1
+  },
+  {
+    title: 'Blockchain Development',
+    icon : blockchain
+  },
+  {
+    title: 'Web Design',
+    icon : xvr
+  },
+  {
+    title: 'Teaching',
+    icon : ui
+  }
+
+]
+
+const Card = ({title, icon}) => {
+  return (
+    <Tilt className='sm:w-[250px] w-full'>
+    <div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-[#090321] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+      >
+        <img
+          src={icon}
+          alt='web-development'
+          className='w-24 h-24 object-contain'
+        />
+
+        <h3 className='text-white text-[20px] font-bold text-center'>
+          {title}
+        </h3>
+      </div>
+    </div>
+  </Tilt>
+  )
+}
 
 function Overview() {
   return (
@@ -18,7 +68,13 @@ function Overview() {
         <div className='w-full bg-title max-w-[380px] rounded-2xl  '>
           <img src={profile} alt="" className='rounded-2xl hover:rotate-12  duration-[1s] ease-in-out transition-all' />
         </div>
-
+      </div>
+      <div className='flex w-full flex-row mx-auto my-10 flex-wrap justify-around items-start gap-10'>
+        {
+          services.map((card)=>(
+            <Card key={card.title} title={card.title} icon={card.icon} />
+          ))
+        }
       </div>
     </div>
   )

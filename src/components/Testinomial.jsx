@@ -46,7 +46,6 @@ function FeedbackCard ({
             {designation} of {company}
           </p>
         </div>
-
         <img
           src={image}
           alt={`feedback_by-${name}`}
