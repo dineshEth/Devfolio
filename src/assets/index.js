@@ -40,6 +40,7 @@ export {
     transit,
     aws,
     html,
+    github,
     css,
     js,
     ts,
