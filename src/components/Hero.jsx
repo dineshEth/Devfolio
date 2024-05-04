@@ -3,7 +3,7 @@ import { DesktopCanvas } from '../canvas';
 
 function Hero() {
   return (
-    <section className='relative h-[70%] w-full mx-auto md:h-screen'>
+    <section className='relative w-full mx-auto h-screen'>
 
     <div className={`absolute sm:px-16 px-6 inset-0 top-[120px]  max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
