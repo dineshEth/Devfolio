@@ -23,6 +23,10 @@ function Hero() {
         </div>
     </div>
     <DesktopCanvas />
+    <div onClick={()=> window.scrollTo({
+      top: '800',
+      behavior: 'smooth'
+    })} className='bg-green-500 rounded-full absolute bottom-[120px] md:bottom-20 left-1/2 mx-auto cursor-pointer text-black rotate-90 p-1 px-2'>Scroll</div>
     </section>
   )
 }

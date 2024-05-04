@@ -1,10 +1,12 @@
 import React, {useRef, useState} from 'react'
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser'
 import { conf } from '../conf/conf';
 
 
 
+
 const Contact = () => {
+  // console.log(conf)
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -29,18 +31,19 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        conf.emailjs_service_id,
-        conf.emailjs_template_id,
-        {
-          from_name: form.name,
-          to_name: "Dinesh Prajapati",
-          from_email: form.email,
-          to_email: `${conf.email}`,
-          message: form.message,
-        },
-        conf.emailjs_public_key
-      )
+    .send(
+      conf.emailjs_service_id, 
+      conf.emailjs_template_id, 
+      {
+        from_name: form.name,
+        to_name: "Dinesh Prajapati",
+        from_email: form.email,
+        to_email: `${conf.email}`,
+        message: form.message,
+      }, 
+      {
+        publicKey: conf.emailjs_public_key
+      })
       .then(
         () => {
           setLoading(false);
@@ -57,9 +60,9 @@ const Contact = () => {
           console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
+        },
+    );
+  }
 
   return (
     <div className={`my-40 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}

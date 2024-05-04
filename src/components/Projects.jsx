@@ -119,6 +119,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  project_link,
 }) => {
   return (
       <Tilt
@@ -137,20 +138,20 @@ const ProjectCard = ({
           />
 
           
-          <div className='absolute inset-0 flex justify-start m-3 '>
+          <div className='absolute z-30 inset-0 flex justify-start m-3 cursor-pointer'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(project_link, "_blank")}
               className='blue-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
                 src={link}
-                alt='source code'
+                alt='project link'
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
             </div>
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -193,7 +194,7 @@ function Projects() {
       </div>
       <div className='flex flex-row flex-wrap justify-start w-full mx-auto items-start gap-4'>
         {ProjectsList.map((project)=>(
-          <ProjectCard key={project.name} name={project.name} description={project.description} image={project.image} tags={project.tags} source_code_link={project.source_code_link}  />
+          <ProjectCard key={project.name} name={project.name} description={project.description} image={project.image} tags={project.tags} source_code_link={project.source_code_link} project_link={project.project_link} />
         ))}
       </div>
     </div>
