@@ -120,6 +120,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   project_link,
+project_link
 }) => {
   return (
       <Tilt
