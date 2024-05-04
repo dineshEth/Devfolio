@@ -31,8 +31,8 @@ function Model() {
        />
       <primitive
         object={computer.scene}
-        scale={mobileview ? 0.3 : 0.65}
-        position={mobileview ? [0, -1.1, -0.5] : [0, -3.45, -1.25]}
+        scale={mobileview ? 0.4 : 0.75}
+        position={mobileview ? [0, -1.5, -0.5] : [0, -3.45, -1.25]}
       />
     </mesh>
   );
