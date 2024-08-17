@@ -5,6 +5,32 @@ import { portfolio, summz, currencyswapper, transit, github, link } from '../ass
 
 const ProjectsList = [
   {
+    name: "Youtube Backend",
+    description:
+      "Videotube is a robust and scalable backend platform built using Node.js, Express.js, and MongoDB. The project is designed to provide a comprehensive and secure infrastructure for building a video-sharing platform, similar to YouTube. The platform enables users to upload, manage, and share videos, as well as interact with each other through comments and likes..",
+    tags: [
+      {
+        name: "nodejs",
+        color: "text-blue-500",
+      },
+      {
+        name: "mongoDB",
+        color: "text-pink-500",
+      },
+      {
+        name: "Rest API",
+        color: "text-green-500",
+      },
+      {
+        name: "expressjs",
+        color: "text-violet-500",
+      },
+    ],
+    image: "https://img.freepik.com/free-vector/application-programming-interface-concept-illustration_114360-9145.jpg?w=1060&t=st=1723865782~exp=1723866382~hmac=0b8e9a618b489dc5e18b4bff5c7a71bcdea6108de10793c17365eba87315235c",
+    source_code_link: "https://github.com/dineshEth/youtube-backend",
+    project_link: ''
+  },
+  {
     name: "Summz",
     description:
       "Created an innovative article summarizer leveraging AI technology. Seamlessly summarizing articles within seconds, the application extracts key insights from URL links, enhancing efficiency and facilitating rapid comprehension for users.",
